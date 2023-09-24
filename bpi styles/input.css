@@ -1,0 +1,31 @@
+.input-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 250px;
+  padding: 3px;
+  row-gap: 10pxxx1c1;
+  
+}
+.input-items{ 
+  padding: 8px;
+  border: 3px gray solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 3px;
+
+}
+.Description-container{
+  display: flex;
+  flex-direction: column  ;
+
+}
+.submit-button{
+  width: 100px;
+}
+.chosen{
+  background-color: rgb(230, 37, 37);
+  color: white;
+}

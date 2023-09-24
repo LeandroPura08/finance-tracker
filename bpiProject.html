@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BPI Savings</title>
+    <link rel="stylesheet" href="/bpi styles/tranhist.css">
+    <link rel="stylesheet" href="/bpi styles/bpi.css">
+    <link rel="stylesheet" href="/bpi styles/input.css">
+    <link rel="stylesheet" href="/bpi styles/display-tran.css">
+    <link rel="stylesheet" href="/bpi styles/pautang.css">
+    <link rel="stylesheet" href="/bpi styles/popup.css">
+    <link rel="stylesheet" href="/bpi styles/paying.css">
+    
+
+  </head>
+  <body class="bodyshade">
+    <div class="side-bar">
+      <button style="
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      height: 20px;
+      width: 80px;
+      " onclick="
+      localStorage.removeItem('deposit');
+      localStorage.removeItem('pautang');
+      localStorage.removeItem('mainBalance');
+      location.reload(true);
+      ">delete data</button>
+    
+
+     <div class="display-tran-container">
+        <div class="transaction-list">
+          <button class="tran-button">
+            <img class="arrowbutton" src="/images/tags.png" alt="Arrow">
+            <div class="textholder-tran">
+              <div>Show</div>
+              <div>Transaction List</div>
+            </div>
+          </button>
+        </div>
+        <div class="pautang-list">
+          <button class="pautang-button">
+            <img class="arrowbutton" src="/images/tags.png" alt="Arrow">
+            <div class="textholder-pautang">
+              <div>Show</div>
+              <div>Pautang List</div>
+            </div>
+          </button>
+        </div>
+    </div>
+    </div>
+
+    <div class="bpi-container">
+      <div class="title-bal">
+        <div class="header">Pura Bank Tracker</div>
+        <div>
+          <div class="balance">0</div>
+        </div>
+      </div>
+
+      <div class="input-container">
+        <div class="input-items">
+          <div>
+            <label for="transactions">Choose a transaction:</label>
+            <select id="transaction">
+              <option value ="Select">Select</option>
+              <option value ="Deposit">Deposit</option>
+              <option value="Withraw">Withraw</option>
+              <option value="Pautang">Pautang</option>
+            </select>
+          </div>
+          <div>
+            
+            <label for="input-amount" >Input Amount:</label>
+            <input class="inputAmount" type="number" placeholder="Input Amount">
+          </div>
+          <div class="Description-container">
+            <label for="input-desc" class="desc-label">Description:</label>
+            <textarea class="item-desc" rows="4" cols="0" name="comment"placeholder="(reuired)"></textarea>
+          </div>
+          <button class="submit-button">Submit</button>
+        </div>
+          <div class="edit-pauts"></div>
+      </div>
+
+      <div class="displaysContainer">
+        <div class="tranlist-header"></div>
+        <div class="display-transaction"></div>
+      </div>
+    </div>
+
+    
+
+    
+    <script src="/bpi-scripts/update.js"></script>
+    <script src="/bpi-scripts/inputs.js"></script>
+    <script src="/bpi-scripts/pautanglst.js"></script>
+    <script src="/bpi-scripts/tranlist.js"></script>
+
+  </body>
+</html>

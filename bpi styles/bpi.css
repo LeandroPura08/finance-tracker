@@ -1,0 +1,98 @@
+body{
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.side-bar{
+  display:flex;
+  position: fixed;
+  width: 150px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.side-logo{
+  position: absolute;
+  height: 60px;
+  padding-top: 5px;
+  padding-left: 4px;
+}
+
+.bpi-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 155px;
+  border: 3px solid gray;
+  border-radius: 5px;
+  width: 900px;
+  padding: 10px;
+}
+.header{
+  font-size: 50px;
+  min-width:  437px;
+}
+
+.balance{
+  background-color: rgb(192, 189, 189);
+  display: flex;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+  min-width:  167px;
+  
+}
+.title-bal{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100px;
+}
+
+.display-tran-container{
+  margin-top: 200px;
+}
+.display-transaction{
+  display: flex;
+  position: relative;
+  overflow:auto;
+  max-height: 400px;
+}
+
+.tran-button , .pautang-button{
+  display: flex;
+  height: 120px;
+  width: 150px;
+  align-items: center;
+  margin-top: 3px;
+  border: none;
+  background-color: none;
+}
+
+.selected{
+  color: white;
+  border: none;
+}
+
+.arrowbutton{
+  width: 100%;
+  object-fit:fill;
+}
+
+.textholder-pautang{
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin-left: 28px;
+}
+.textholder-tran{
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}

@@ -1,0 +1,34 @@
+.payingheader{
+  margin-top: 20px;
+}
+.confirmContainer ,.cancelContainer{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.confirmContainer{
+   margin-right: 20px;
+}
+.updateType{
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.chngAMntContainer{
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+}
+.changeAmount{
+  align-items: center;
+  display: flex;
+  width: 100px;
+}
+.cancel , .confirm{
+    height: 30px;
+    width: 90px;
+}

@@ -1,0 +1,8 @@
+.update-btn, .amount , .desc, .date{
+  border: 1px red;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 300px;
+  align-items: center;
+}

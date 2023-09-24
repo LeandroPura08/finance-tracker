@@ -1,0 +1,74 @@
+
+.tranlist-header, .pauts-header{
+  background-color: lightblue;
+  display: Flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.display-transaction{
+  display: flex;
+  flex-direction: column;
+}
+.input-transaction{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.trans-list, .pauts-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.deposit{
+  color: green;
+}
+.withraw{
+  color: red;
+}
+
+.other-tran-container{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.other-tran-container-selected{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.other-tran{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.othertype , .otheramount , .otherdescription , .otherdate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showOtherTran{
+  display: flex;
+  position:absolute;
+  align-items: center;
+  justify-content: end;
+  margin-right: -100px;
+}
+.otherTranButton{
+  display: flex;
+  height: 18px;
+  width: 5px;
+  
+  }
+
+
+  .burger{
+    height: 100%;
+    margin-left: -6px;
+  }

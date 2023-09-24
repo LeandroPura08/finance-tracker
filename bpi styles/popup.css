@@ -1,0 +1,104 @@
+.selectedButton{
+  background-color: rgb(247, 122, 122);
+  color: beige;
+  border: 1px solid gray;
+  border-radius: 1px;
+  height: 20px;
+  width: 60px;
+}
+.showPauts{
+  border: gray solid 2px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 430px;
+  height: 230px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+.amountContainer{
+  margin-top: 10px;
+}
+
+.amountContainer, .descContainer{
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  justify-content: space-between;
+}
+.label {
+  display: flex;
+  font-size: 15px;
+  width: 95px;
+  align-items: center;
+}
+.outPut{
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+}
+
+.buttonContainer{
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.pay ,.add{
+  height: 30px;
+  width: 90px;
+}
+.payContainer{
+  margin-right: 20px;
+}
+
+.payContainer , .addContainer {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.tranComment{
+  height: 30px;
+}
+.updatedTransaction{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-self: center;
+  background-color: lightgreen;
+  font-size: 50px;
+  transition: ;
+}
+
+.result{
+  display: flex;     
+  align-items: center;
+  justify-self: center;
+  background-color: lightgreen;
+  font-size: 40px;
+  transition: 3ms;
+  position: absolute;
+  left: 30%;
+  bottom: 30%;
+ font-family: 'Times New Roman', Times, serif;
+}
+.otherTranButton:hover{
+  cursor: pointer;
+  .dropdown{
+    transition:1ms;
+    display: flex;
+  }
+}
+.dropdown{
+  display: flex;
+  position: absolute;
+  height: 2px;
+  font-size: 7px;
+  margin-top: -20px;
+  display: none;
+}

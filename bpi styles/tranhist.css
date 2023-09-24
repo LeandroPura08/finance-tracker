@@ -1,0 +1,56 @@
+.input-transaction{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typeheader, .amountheader , .descheader, .dateheader{
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 300px;
+  font-weight:300;
+  justify-content: center;
+}
+
+
+.type, .amount , .date{
+  display: flex;
+  height: 40px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  font-weight:300;
+  position:relative;
+}
+.desc{
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  font-weight:300;
+  overflow:auto;
+  position:relative;
+
+}
+
+.otheramount,.otherdescription,.otherdate{
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 300px;
+  align-items: center; 
+  padding-right: 10px;
+  font-size: 10px;
+}
+.othertype{
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 280px;
+  position: relative;
+  font-size: 10px;
+}
