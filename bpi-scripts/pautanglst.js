@@ -6,18 +6,20 @@ function showPautang(){
     date = transaction.date;
     amount = transaction.amount;
     description = transaction.description;
-
-    utangsToHTML = utangsToHTML +
-  `
-  <div class="input-transaction">
-      <div class="amount">${amount}</div>
-      <div class="desc" >${description}</div>
-      <div class="date">${date}</div>
-      <div class="update-btn">
-        <button class="updateMe" data-index="${id}">Update</button>
+    if(amount > 0){
+      utangsToHTML = utangsToHTML +
+      `
+      <div class="input-transaction">
+          <div class="amount">${amount}</div>
+          <div class="desc" >${description}</div>
+          <div class="date">${date}</div>
+          <div class="update-btn">
+            <button class="updateMe" data-index="${id}">Update</button>
+          </div>
       </div>
-  </div>
-  `
+      `
+
+    }
   });
   document.querySelector('.pauts-list').innerHTML = utangsToHTML;
   updateButton();

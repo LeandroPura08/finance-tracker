@@ -244,7 +244,17 @@ function confirmAddUpdate(ind){
                 });
                   mainBalance = mainBalance - addAmount;
                 showPautang();
-                document.querySelector('.edit-pauts').innerHTML = ""
+
+                setTimeout(function showthis(){
+                  document.querySelector('.edit-pauts').classList.remove("updatedTransaction");
+                  document.querySelector('.edit-pauts').innerHTML = "";
+                  document.querySelector('.edit-pauts').classList.remove("showPauts");
+                  
+                },2000);
+                document.querySelector('.edit-pauts').classList.add("updatedTransaction");
+                document.querySelector('.updatedTransaction').innerHTML = `
+                <div class="result">Transaction Completed!</div>
+                `;
                 defaultPage();
                 saveALl();
             }

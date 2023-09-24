@@ -40,7 +40,11 @@ body{
   justify-content: center;
   align-items: center;
   min-width:  167px;
-  
+  max-width: 300px;
+  overflow:initial;
+}
+.balace-container{
+  width: 300px;
 }
 .title-bal{
   display: grid;
